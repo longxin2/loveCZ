@@ -386,7 +386,30 @@ window.addEventListener("resize",()=>{
 	cy=canvas.height/2;
 });
 
-</script>
+var i=0;
+var str="";
+		
+		window.onload=function typing(){
+			//获取div
+			var mydiv=document.getElementById("text");
+			mydiv.innerHTML+=str.charAt(i);
+			i++;
+			var id=setTimeout(typing,100);
+			if(i==str.length){
+				clearTimeout(id);
+			}
+		}
 
+</script>
+<div class="top">
+		<marquee behavior="alternate"> <font color="#FFF0F5" size="5" face="华文行楷"> 往后余生，我只要猪猪 </font> </marquee><br/>
+		<marquee behavior="alternate"> <font color="#FFFF00" size="4" face="华文行楷"> 我家亲爱的猪猪——————</font> </marquee>
+		<marquee behavior="alternate"> <font color="#FFFF00" size="4" face="华文行楷">       自从2018年4月5日认识你,你就是我最大的幸运，有了你，我的生活变得丰富多彩， </font> </marquee>
+		<marquee behavior="alternate"> <font color="#FFFF00" size="4" face="华文行楷">对我来说，不是在最美好的时光遇见了你，而是遇见你后都是最美好的时光！ </font> </marquee>
+		<marquee behavior="alternate"> <font color="#FFFF00" size="4" face="华文行楷"> 时间在一分一秒的度过，离我们要实现的愿望也越来越近，开心到爆炸，哈哈哈，亲爱的，你不要太累了哦，记住！ </font> </marquee>
+		<marquee behavior="alternate"> <font color="#FFFF00" size="4" face="华文行楷"> 到时候我可不好怎么跟我妈交代。你是我的世界，我的世界是你。 </font> </marquee>
+		<marquee behavior="alternate"> <font color="#FFFF00" size="4" face="华文行楷"> 								——————永远爱你的鑫鑫 2019.05.20 </font> </marquee>
+		
+	</div>
 </body>
 </html>
